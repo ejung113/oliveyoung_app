@@ -190,7 +190,7 @@ def extract_keywords(feature_name, sorted_keywords,n=10):
 ```
 
 ```python
-eature_name = count_vect.get_feature_names_out()
+feature_name = count_vect.get_feature_names_out()
 tf_idf_vector = tfidf_transformer.transform(count_vect.transform(words))
 sorted_keywords = sort_keywords(tf_idf_vector.tocoo())
 keywords = extract_keywords(feature_name,sorted_keywords)
